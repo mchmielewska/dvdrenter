@@ -10,8 +10,6 @@ const authMiddleware = require('./middlewares/auth').authMiddleware;
 
 const app = express();
 
-console.log(process.env);
-
 app.use(bodyParser.json());
 app.use('/users', userRouter);
 app.use(authMiddleware);
