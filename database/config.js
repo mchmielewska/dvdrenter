@@ -1,5 +1,7 @@
+const dbConn = require('../config').dbc; 
+
 const dbConfig = {
-    url: "<your connection url>",
+    url: dbConn,
     options: {}
 }
 
